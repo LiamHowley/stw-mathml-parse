@@ -11,9 +11,8 @@
 	       (:file "meta")
 	       (:file "model")
 	       (:file "parse")
-	       (:file "read")
-	       (:file "print"))
+	       (:file "read"))
   :long-description
   #.(uiop:read-file-string
      (uiop:subpathname *load-pathname* "docs/README.org"))
-  :in-order-to ((test-op (load-op :stw-svg-test))))
+  :in-order-to ((test-op (load-op :stw-mathml-test))))
