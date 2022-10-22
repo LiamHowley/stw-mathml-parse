@@ -1,0 +1,10 @@
+#+LATEX_CLASS: stw-documentation
+#+TITLE: STW-MATHML-PARSE
+#+AUTHOR: Liam Howley
+
+#+OPTIONS: toc
+
+** Introduction
+
+STW-MATHML-PARSE is a work in progress. It is recommended to read the [[https://github.com/liamhowley/stw-xml-parse][STW-XML-PARSE]] documentation. If the mathml document is to be embedded in a html document, read also the [[https://github.com/liamhowley/stw-html-parse][STW-HTML-PARSE]] documentation. More to come!
+
