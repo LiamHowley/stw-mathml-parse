@@ -23,6 +23,7 @@
 
    ;; specials
    :*preserve-whitespace*
+   :*mathml-element-class-map*
 
    ;; meta
    :element-class
