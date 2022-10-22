@@ -71,8 +71,8 @@
   (:status . :non-core))
 
 (define-mathml-node mfenced ()
-  ((open :status :deprecated)
-   (close :status :deprecated)
+  ((mfenced-open :status :deprecated :attribute "open")
+   (mfenced-close :status :deprecated :attribute "close")
    (separators :status :deprecated))
   (:status . :deprecated))
 
