@@ -19,7 +19,11 @@
     ()
     (:metaclass singleton-class))
 
-  (defvar *mathml-global-attributes `(mathml-class data-* dir displaystyle id mathbackground mathcolor mathsize mathvariant nonce scriptlevel mathml-style tabindex))
+  (defvar *mathml-global-attributes*
+    `((mathml-class :attribute "class" :initarg :class :type cons :accessor mathml-class)
+      (data-* :initarg :data-* :type multiple-attributes :accessor data-*)
+      (dir :initarg :dir :expected-value ("ltr" "rtl" "auto") :accessor dir)
+      displaystyle id mathbackground mathcolor mathsize mathvariant nonce scriptlevel mathml-style tabindex))
 
   (defvar *boolean-attributes* `(accent accentunder displaystyle separator stretchy symmetric)))
 
