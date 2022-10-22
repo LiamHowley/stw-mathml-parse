@@ -5,12 +5,6 @@
 
 (eval-when (:compile-toplevel :load-toplevel :execute)
 
-  (defvar *grouping-elements* `(maction math merror mphantom mprescripts mrow mstyle none semantics))
-
-  (defvar *scripted-elements* `(mmultiscripts mover msub msubsup msup munder munderover))
-
-  (defvar *radical-elements* `(mroot msqrt))
-  
   (defvar *all-elements* `(annotation annotation-xml maction math merror mfrac mi mmultiscripts mn mo mover mpadded mphantom mprescripts mroot mrow ms mspace msqrt mstyle msub msubsup msup mtable mtd mtext mtr munder munderover none semantics))
 
   (defclass grouping-element ()
