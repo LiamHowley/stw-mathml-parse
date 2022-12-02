@@ -1,7 +1,6 @@
 (in-package :cl-user)
 
 (defpackage mathml.parse
-  (:nicknames :mathml)
   (:use :cl :xml.parse)
 
   (:import-from
