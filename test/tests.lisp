@@ -54,6 +54,6 @@
 	 (child-node (car (slot-value document-node 'child-nodes)))
 	 (mi (car (get-elements-by-tagname document-node "mi" *mathml-element-class-map*))))
     (true (slot-exists-p child-node 'mathml.parse::linethickness))
-    (is string= "0" (slot-value child-node 'mathml.parse::linethickness))
+    (is string= "0" (mathml-parse-linethickness child-node))
     (is string= "n" (text (car (slot-value mi 'child-nodes))))
     (of-type 'readtable (remove-reader))))
