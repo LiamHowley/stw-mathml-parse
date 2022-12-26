@@ -25,11 +25,11 @@
     </mrow>
   </math>")
 
-(defvar *parsed-mathml* (parse-document (make-instance 'mathml-document-node :document *mathml*)))
+(defvar *parsed-mathml* (parse-document *mathml* :element-class-map *mathml-element-class-map*))
 
 (define-test parse-mathml...
   :parent test-parse
-  (of-type 'mathml-document-node *parsed-mathml*)
+  (of-type 'document-node *parsed-mathml*)
   (let ((element (car (get-elements-by-tagname *parsed-mathml* "mo" *mathml-element-class-map*))))
     (of-type 'mathml.parse::mo element)
     (of-type 'mathml.parse::mathml-element-class (class-of element)))

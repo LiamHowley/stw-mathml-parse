@@ -14,4 +14,4 @@
        (let ((output (with-output-to-string (out)
 		       (write-char #\< out)
 		       (parse-stream stream out))))
-	 (parse-document (make-instance 'mathml-document-node :document output)))))))
+	 (parse-document output :element-class-map *mathml-element-class-map*))))))

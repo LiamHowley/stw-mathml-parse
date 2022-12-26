@@ -1,8 +1,5 @@
 (in-package mathml.parse)
 
-(defclass mathml-document-node (xml-document-node)
-  ())
-
 (eval-when (:compile-toplevel :load-toplevel :execute)
 
   (defvar *all-elements* `(annotation annotation-xml maction math merror mfrac mi mmultiscripts mn mo mover mpadded mphantom mprescripts mroot mrow ms mspace msqrt mstyle msub msubsup msup mtable mtd mtext mtr munder munderover none semantics))
@@ -21,8 +18,8 @@
 
   (defvar *mathml-global-attributes*
     `((mathml-class :attribute "class" :initarg :class :type cons :accessor mathml-class)
-      (data-* :initarg :data-* :type multiple-attributes :accessor data-*)
-      (dir :initarg :dir :expected-value ("ltr" "rtl" "auto") :accessor dir)
+      (data-* :initarg :data-* :type multiple-attributes)
+      (dir :initarg :dir :expected-value ("ltr" "rtl" "auto"))
       displaystyle id mathbackground mathcolor mathsize mathvariant nonce scriptlevel mathml-style tabindex))
 
   (defvar *boolean-attributes* `(accent accentunder displaystyle separator stretchy symmetric)))
