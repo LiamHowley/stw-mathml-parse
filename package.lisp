@@ -57,7 +57,6 @@
    :read-into
    :read-subelements
    :bind-child-node
-   :prepare-slot
    :assign-value
    :parse-value
    :get-element-name
