@@ -10,7 +10,6 @@
   :components ((:file "package")
 	       (:file "meta")
 	       (:file "model")
-	       (:file "parse")
 	       (:file "read"))
   :long-description
   #.(uiop:read-file-string
